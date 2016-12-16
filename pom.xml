@@ -5,7 +5,7 @@
 
 	<groupId>com.example</groupId>
 	<artifactId>cloudwatch-logs-demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>cloudwatch-logs-demo</name>
@@ -34,12 +34,18 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- Spring Cloud AWS -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-aws</artifactId>
+		</dependency>
+
 		<!-- Java log appender for AWS CloudWatch Logs -->
-		<!--<dependency>-->
-			<!--<groupId>com.boxfuse.cloudwatchlogs</groupId>-->
-			<!--<artifactId>cloudwatchlogs-java-appender</artifactId>-->
-			<!--<version>1.0.2.17</version>-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>com.boxfuse.cloudwatchlogs</groupId>
+			<artifactId>cloudwatchlogs-java-appender</artifactId>
+			<version>1.0.2.17</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -53,15 +59,38 @@
 		</dependency>
 	</dependencies>
 
+
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<!-- boxfuse plugin -->
+			<plugin>
+				<groupId>com.boxfuse.client</groupId>
+				<artifactId>boxfuse-maven-plugin</artifactId>
+				<version>1.23.4.1200</version>
+				<configuration>
+					<user>1cce09bb7bdc43f1b1d1afab4227f6b1</user>
+					<secret>h1F6vQO452BP6lXBzLYvY02WTAoFwPxJH3u4iLnLtIKUmwtajyUH9Vz5cyKLZJyf</secret>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Camden.SR3</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<repositories>
 		<repository>
@@ -73,5 +102,13 @@
 			<url>https://files.boxfuse.com</url>
 		</repository>
 	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>boxfuse-repo</id>
+			<url>https://files.boxfuse.com</url>
+		</pluginRepository>
+	</pluginRepositories>
+
 
 </project>

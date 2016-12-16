@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: cloudwatch-logs-demo
+
+cloud:
+  aws:
+    credentials:
+      accessKey: AKIAIZ2ZTMQRPWJMJR5Q
+      secretKey: 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
