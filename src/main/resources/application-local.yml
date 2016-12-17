@@ -1,0 +1,5 @@
+# Region must be manually configured or autoDetect enabled
+cloud:
+  aws:
+    region:
+      static: eu-central-1
