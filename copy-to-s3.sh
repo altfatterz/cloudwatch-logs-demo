@@ -1,3 +1,5 @@
+#!/bin/bash
+
 mvn clean package
 aws s3 cp target/cloudwatch-logs-demo-0.0.1.jar s3://spring-boot-examples/cloudwatch-logs-demo/
 aws s3 cp logback.xml s3://spring-boot-examples/cloudwatch-logs-demo/
