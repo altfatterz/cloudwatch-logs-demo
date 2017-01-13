@@ -1,7 +1,4 @@
+Demo application for the blog post:
 
-Start locally:
-
-```
-java -jar target/cloudwatch-logs-demo --spring.profiles.active=local --logging.config=./conf/logback-local.xml
-```
+http://zoltanaltfatter.com/2017/01/13/centralized-logging-with-cloudwatch-logs/
 
