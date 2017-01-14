@@ -14,7 +14,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.4.2.RELEASE</version>
+		<version>1.4.3.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
@@ -74,19 +74,6 @@
 					<executable>true</executable>
 				</configuration>
 			</plugin>
-
-			<!-- boxfuse plugin -->
-			<!--
-			<plugin>
-				<groupId>com.boxfuse.client</groupId>
-				<artifactId>boxfuse-maven-plugin</artifactId>
-				<version>1.23.4.1200</version>
-				<configuration>
-					<user>1cce09bb7bdc43f1b1d1afab4227f6b1</user>
-					<secret>h1F6vQO452BP6lXBzLYvY02WTAoFwPxJH3u4iLnLtIKUmwtajyUH9Vz5cyKLZJyf</secret>
-				</configuration>
-			</plugin>
-			-->
 		</plugins>
 	</build>
 
@@ -95,7 +82,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Camden.SR3</version>
+				<version>Camden.SR4</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -112,13 +99,5 @@
 			<url>https://files.boxfuse.com</url>
 		</repository>
 	</repositories>
-
-	<pluginRepositories>
-		<pluginRepository>
-			<id>boxfuse-repo</id>
-			<url>https://files.boxfuse.com</url>
-		</pluginRepository>
-	</pluginRepositories>
-
 
 </project>

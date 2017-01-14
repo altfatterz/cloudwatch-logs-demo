@@ -2,3 +2,7 @@ cloud:
   aws:
     stack:
       auto: false
+
+    # Region must be manually configured or autoDetect enabled
+    region:
+      static: eu-central-1
