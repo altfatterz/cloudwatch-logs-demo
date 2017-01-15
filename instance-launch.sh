@@ -17,7 +17,6 @@ mkdir /opt/cloudwatch-logs-demo
 
 # download the maven artifact from S3
 aws s3 cp s3://spring-boot-examples/cloudwatch-logs-demo/cloudwatch-logs-demo-0.0.1.jar /opt/cloudwatch-logs-demo/cloudwatch-logs-demo.jar --region=eu-central-1
-aws s3 cp s3://spring-boot-examples/cloudwatch-logs-demo/logback.xml /opt/cloudwatch-logs-demo/ --region=eu-central-1
 aws s3 cp s3://spring-boot-examples/cloudwatch-logs-demo/cloudwatch-logs-demo.conf /opt/cloudwatch-logs-demo/ --region=eu-central-1
 aws s3 cp s3://spring-boot-examples/cloudwatch-logs-demo/awscli.conf /etc/awslogs/awscli.conf --region=eu-central-1
 aws s3 cp s3://spring-boot-examples/cloudwatch-logs-demo/awslogs.conf /etc/awslogs/awslogs.conf --region=eu-central-1

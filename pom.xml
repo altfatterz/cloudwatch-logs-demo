@@ -46,11 +46,11 @@
 		</dependency>
 
 		<!-- Java log appender for AWS CloudWatch Logs -->
-		<dependency>
-			<groupId>com.boxfuse.cloudwatchlogs</groupId>
-			<artifactId>cloudwatchlogs-java-appender</artifactId>
-			<version>1.0.2.17</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>com.boxfuse.cloudwatchlogs</groupId>-->
+			<!--<artifactId>cloudwatchlogs-java-appender</artifactId>-->
+			<!--<version>1.0.2.17</version>-->
+		<!--</dependency>-->
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
